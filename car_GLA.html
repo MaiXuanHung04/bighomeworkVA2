@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="car_GLA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="car_GLA.js"></script>
+    <title>Car_GLA</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <img src="https://assets.oneweb.mercedes-benz.com/global/1.16.0/images/svg/MB-star_n_web.svg"
+                        alt="Mercedes-Benz Logo" class="logo">
+                    <span class="brand-name">Mercedes-Benz</span>
+                </div>
+                <div class="header-right">
+                    <p>Chính sách và quyền riêng tư</p>
+                    <button>EN</button>
+                    <button>VI</button>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Từ khóa tìm kiếm">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><i class="fa-solid fa-car-rear"></i></li>
+                    <li><a href="#">Các dòng xe</a></li>
+                    <li><a href="#">Mua trực tuyến</a></li>
+                    <li><a href="#">Tư vấn mua xe</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Thế giới Mercedes-Benz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    </header>
+    <main>
+        <div class="main-bar">
+            <menu></menu>
+            <p>Mercedes-AMG GLA</p>
+            <div class="button">
+                <button id="button1">
+                    <p>Thiết kế cấu hình xe</p>
+                </button>
+                <button id="button2">
+                    <p>Tìm xe có sẵn</p>
+                </button>
+            </div>
+        </div>
+        <div class="main-display">
+            <img src="Mtr/image/displaymodels.png" alt="">
+        </div>
+        <div class="main-parameter">
+            <div class="box-parameter">
+                <p>Công suất</p>
+                <h1>310 kW [421 hp]</h1>
+                <p>tại 6750 vòng/phút</p>
+            </div>
+            <div class="box-parameter">
+                <p>Mô men xoắn</p>
+                <h1>500 Nm</h1>
+                <p>tại 5000 - 5250 vòng/phút</p>
+            </div>
+            <div class="box-parameter">
+                <p>Tăng tốc trong</p>
+                <h1>4.3 giây</h1>
+                <p>từ 0 lên đến 100 km/h</p>
+            </div>
+            <div class="box-parameter">
+                <p>Vận tốc tối đa</p>
+                <h1>265 km/h</h1>
+            </div>
+        </div>
+        <div class="main-bg1">
+            <img src="Mtr/image/models1.png" alt="">
+        </div>
+        <div class="main-text1">
+            <p><b>Mở ra những trải nghiệm chưa từng có trước đây.</b></p>
+            <p>Tiếp tục tận hưởng sự tự do trên những cung đường bất tận. Thành viên mới Mercedes-AMG GLA 45 S 4MATIC+
+                sẽ cùng bạn khám phá mọi nơi có thể. Phóng khoáng. Trang nhã. Thể thao. ADN đậm chất Mercedes-AMG không
+                thể nhầm lẫn. </p>
+        </div>
+        <div class="main-text2">
+            <p>Thiết kế ngoại thất</p>
+            <h1>Âm thanh uy quyền. Cốt cách sang trọng. Mạnh mẽ trong từng chi tiết.</h1>
+            <p>Sự gia nhập của Mercedes-AMG GLA vào thế giới AMG Driving Performance tạo nên sức quyến rũ rất<br>
+                riêng. Vẻ ngoài đầy mạnh mẽ như lời tuyên ngôn rõ ràng của chất thể thao năng động – AND đặc trưng<br>
+                của dòng xe AMG.</p>
+        </div>
+        <div class="car-gallery">
+            <div class="car" id="car1">
+                <img src="Mtr/image/models2.png" alt="Car 1">
+                <button class="view-button" onclick="openCar(1)">View</button>
+            </div>
+            <div class="car" id="car2">
+                <img src="Mtr/image/models3.png" alt="Car 2">
+                <button class="view-button" onclick="openCar(2)">View</button>
+            </div>
+            <div class="car" id="car3">
+                <img src="Mtr/image/models4.png" alt="Car 3">
+                <button class="view-button" onclick="openCar(3)">View</button>
+            </div>
+        </div>
+
+        <div class="car-modal" id="carModal">
+            <span class="close" onclick="closeCar()">×</span>
+            <button class="prev-button" onclick="changeCar(-1)">←</button>
+            <img id="modalImage" src="" alt="Car View">
+            <button class="next-button" onclick="changeCar(1)">→</button>
+        </div>
+        <div class="main-text3">
+            <p>Thiết kế nội thất</p>
+            <h1>Mang những trải nghiệm thể thao sống động vào mỗi chuyến đi.</h1>
+            <p>Thiết kế buồng lái thể hiện đẳng cấp: cụm đồng hồ với màn hình đậm chất AMG đến ghế kiểu thể thao <br> và
+                tay
+                lái AMG Performance bọc vải vi sợi DINAMICA. Tất cả mang đến cảm hứng lái phần khích, sẵn <br> sàng khám
+                phá
+                mọi con đường trong thành phố.</p>
+        </div>
+        <div class="main-bg2">
+            <img src="Mtr/image/models6.png" alt="">
+        </div>
+        <div class="main-text4">
+            <p>Hiệu suất</p>
+            <h1>Kick-off.</h1>
+            <p>Trải nghiệm sự tương tác hoàn hảo giữa hiệu suất, công suất và động lực học của Mercedes-AMG GLA 45 S
+                4MATIC+.</p>
+        </div>
+        <div class="main-bg3">
+            <img src="Mtr/image/models7.png" alt="">
+        </div>
+        <div class="main-setting">
+            <div class="main-text5">
+                <p>Trang thiết bị AMG</p>
+                <h1>Thiết lập thế giới của bạn.</h1>
+            </div>
+            <div class="list-function">
+                <ul>
+                    <li><a href="#">Ngoại thất</a></li>
+                    <li><a href="#">Nội thất</a></li>
+                    <li><a href="#">Hiệu suất</a></li>
+                </ul>
+            </div>
+            <div class="box-img1">
+                <img src="Mtr/image/function1-list.png" alt="">
+                <p><b>Mâm xe thể thao AMG với thiết kế đa chấu, 53,3 cm (21-inch)</b></p>
+                <p>Mâm xe thể thao AMG với thiết kế đa chấu, 53,3 cm (21-inch)</p>
+            </div>
+        </div>
+        <div class="container1">
+            <h2>Yêu cầu tư vấn</h2>
+            <p>Để nhận thông tin báo giá cụ thể của mẫu xe Mercedes-AMG GT 53 4MATIC+ Coupé FL, Quý khách lòng <br> lòng
+                điền thông tin dưới đây; bộ phận tư vấn Mercedes-Benz Việt Nam sẽ liên hệ trong thời gian sớm nhất.</p>
+            <form id="testDriveForm">
+                <label for="name">Họ và tên: </label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+                <span class="error-message">Vui lòng nhập đầy đủ thông tin</span>
+                <label for="gender">Danh xưng:</label>
+                <div class="gender-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Ông</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Bà</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Khác</label>
+                </div>
+                <span class="error-message">Vui lòng chọn danh xưng</span>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email" required>
+                <span class="error-message">Vui lòng nhập email hợp lệ</span>
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                <span class="error-message">Vui lòng nhập số điện thoại</span>
+                <label for="carModel">Chọn Mẫu Xe:</label>
+                <select name="carModel" id="carModel" required>
+                    <option value="" disabled selected>Chọn mẫu xe</option>
+                    <option value="A-Class">A-Class</option>
+                    <option value="GLA">GLA</option>
+                    <option value="Mercedes-AMG GT 4-door Coupé">Mercedes-AMG GT 4-door Coupé</option>
+                    <option value="Mercedes-AMG SL Roadster">Mercedes-AMG SL Roadster</option>
+                    <option value="V-Class">V-Class</option>
+                </select>
+                <span class="error-message">Vui lòng chọn mẫu xe</span>
+                <label for="preferredDate">Chọn Ngày Trải Nghiệm:</label>
+                <input type="date" id="preferredDate" name="preferredDate" required>
+                <span class="error-message">Vui lòng chọn ngày</span>
+                <button type="submit">Gửi yêu cầu</button>
+            </form>
+            <p id="resultMessage"></p>
+            <script src="form.js"></script>
+        </div>
+        <div class="boxSlide">
+            <div class="boxElement">
+                <div class="one">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="two">
+                    <div class="two-element">
+                        <h5 class="truot">Cửa hàng trực tuyến Online Showroom</h5>
+                        <p class="truot">Tìm xe có sẵn trên toàn quốc</p>
+                    </div>
+                    <div class="three"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+            <div class="boxElement">
+                <div class="one">
+                    <i class="fa-solid fa-car-rear"></i>
+                </div>
+                <div class="two">
+                    <div class="two-element">
+                        <h5 class="truot">Thiết kế cấu hình xe</h5>
+                        <p class="truot">Khám phá và thiết kế theo nhu cầu cá nhân</p>
+                    </div>
+                    <div class="three"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+            <div class="boxElement">
+                <div class="one">
+                    <i class="fa-solid fa-file-import"></i>
+                </div>
+                <div class="two">
+                    <div class="two-element">
+                        <h5 class="truot">Đăng ký lái thử</h5>
+                        <p class="truot">Trực tiếp trải nghiệm mẫu xe yêu thích</p>
+                    </div>
+                    <div class="three"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="title">
+                <p>Lên trên</p>
+            </div>
+            <div class="box-footer">
+                <button>
+                    <p>Đăng <br> ký và nhận quà tặng</p>
+                </button>
+                <h3>Kết nối với Mercedes-Benz</h3>
+                <h6>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</h6>
+            </div>
+            <div class="box-feature">
+                <ul>
+                    <li><b>Các dòng xe</b></li>
+                    <li>Xe thuần điện EQ</li>
+                    <li>Sedan</li>
+                    <li>SUV</li>
+                    <li>Cabriolet và Roadster</li>
+                    <li>Mercedes-AMG</li>
+                    <li>Mercedes-Maybach</li>
+                    <li>Xe đa dụng</li>
+                </ul>
+                <ul>
+                    <li><b>Mua xe</b></li>
+                    <li>Ưu đãi mới nhất</li>
+                    <li>Tìm xe mới</li>
+                    <li>Tìm xe đã qua sử dụng </li>
+                    <li>Bảng giá & Brochure</li>
+                    <li>Cấu hình xe</li>
+                    <li>Khối doanh nghiệp & <br>Khách hàng ưu tiên</li>
+                </ul>
+                <ul>
+                    <li><b>Tư vấn mua xe</b></li>
+                    <li>Yêu cầu tư vấn</li>
+                    <li>Đăng ký lái thử</li>
+                    <li>Tìm Nhà phân phối <br>gần nhất</li>
+                </ul>
+                <ul>
+                    <li><b>Dịch vụ</b></li>
+                    <li>Ưu đãi dịch vụ</li>
+                    <li>Đặt hẹn dịch vụ</li>
+                    <li>Hướng dẫn sử dụng dành <br>cho chủ sở hữu xe</li>
+                    <li>Phụ kiện chính hãng</li>
+                    <li>Bộ sưu tập Mercedes<br>-Benz</li>
+                    <li>Triệu hồi</li>
+                </ul>
+                <ul>
+                    <li><b>Khám phá Mercedes</b></li>
+                    <li>Câu chuyện của chúng <br>tôi</li>
+                    <li>Cơ hội việc làm</li>
+                    <li>Liên hệ</li>
+                    <li>Quyền riêng tư</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="social">
+                <ul>
+                    <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                    <li> <span><i class="fa-brands fa-youtube"></i></span></li>
+                    <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                    <li><span><i class="fa-brands fa-linkedin"></i></span></li>
+                </ul>
+            </div>
+            <div class="box-social">
+                <ul>
+                    <li>Bản quyền nội dung</li>
+                    <li>Cài đặt</li>
+                    <li>Quyền riêng tư và bảo vệ dữ liệu
+                    </li>
+                    <li>Thông tin pháp lý</li>
+                </ul>
+            </div>
+    </footer>
+</body>
+
+</html>
