@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm xe mới trong phòng bán trực tuyến | Cửa hàng Mercedes-Benz</title>
+    <link rel="stylesheet" href="xemoi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <img src="https://assets.oneweb.mercedes-benz.com/global/1.16.0/images/svg/MB-star_n_web.svg"
+                        alt="Mercedes-Benz Logo" class="logo">
+                    <span class="brand-name">Mercedes-Benz</span>
+                </div>
+                <div class="header-right">
+                    <p>Chính sách và quyền riêng tư</p>
+                    <button>EN</button>
+                    <button>VI</button>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Từ khóa tìm kiếm" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><i class="fa-solid fa-car-rear"></i></li>
+                    <li><a href="#">Các dòng xe</a></li>
+                    <li><a href="#">Mua trực tuyến</a></li>
+                    <li><a href="#">Tư vấn mua xe</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Thế giới Mercedes-Benz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ 
+   <div class="main-container">
+         <section class="hero">
+            <h1 class="hero-title">Mercedes-AMG SL Roadster</h1>
+            <figure class="car-image">
+                <img src="anhxe/Mercedes-AMG SL Roadsterngang.png" alt="Mercedes-AMG SL Roadster">
+            </figure>
+            <section class="buttons">
+                <button class="btn enquiry-btn">Make an enquiry</button>
+                <button class="btn config-btn">Thiết kế cấu hình xe</button>
+            </section>
+        </section>
+            <section class="specs">
+                <div class="specs-item">
+                    <h2 class="specs-value">381-816 hp[1]</h2>
+                    <p class="specs-description">Công suất cực đại</p>
+                </div>
+                <div class="specs-item">
+                    <h2 class="specs-value">480-1420 Nm[1]</h2>
+                    <p class="specs-description">Mô men xoắn cực đại</p>
+                </div>
+                <div class="specs-item">
+                    <p class="specs-label">Tăng tốc trong</p>
+                    <h2 class="specs-value">4,9-3,6 giây</h2>
+                    <p class="specs-description">từ 0 lên đến 100 km/h</p>
+                </div>
+                <div class="specs-item">
+                    <p class="specs-label">Lên đến</p>
+                    <h2 class="specs-value">315 km/h</h2>
+                    <p class="specs-description">Vận tốc tối đa</p>
+                </div>
+            </section>
+
+
+
+        <div class="promo-container">
+            <img src="anhxe/OW_Banner_1440x1080.webp" alt="Mercedes-AMG SL Roadster" class="promo-image">
+            <div class="promo-content">
+                <h2 >Khuyến mại đặc biệt dành cho dòng xe Mercedes-AMG</h2>
+                <p >Khám phá sức mạnh và phong cách vượt trội của dòng xe AMG. Từ thiết kế thể thao đến hiệu suất đỉnh cao, mỗi chiếc Mercedes-AMG là biểu tượng của đam mê và khát vọng chinh phục.</p>
+                <p >Từ ngày <strong>21/09/2024</strong> đến <strong>31/10/2024</strong>, khách hàng khi mua xe Mercedes-AMG từ các đại lý chính hãng sẽ được nhận chuyến đi trải nghiệm AMG tại Thụy Điển dành cho 1 người. <br>
+                    Áp dụng cho các dòng xe: G 63, SL 43, và GT 53.</p>
+                
+                <p >*Điều kiện và điều khoản áp dụng.</p>
+                <section class="buttons">
+                    <button class="btn enquiry-btn">Liên hệ tư vấn ngay</button>
+                    <button class="btn config-btn">Xem thể lệ chương trìnnh</button>
+                </section>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    
+            <div class="carousel">
+                <div class="slide active" id="ngoai-that">
+                    <div class="text-overlay">
+                        <h2>Ngoại Thất</h2>
+                        <p>Mui xếp mềm cổ điển và mạnh mẽ.</p>
+                    </div>
+                    <img src="anhxe/mercedes-amg-sl-r232-highlights-exterior-1280x720-11-2022.avif" alt="Ngoại thất xe">
+                </div>
+                <div class="slide" id="noi-that">
+                    <div class="text-overlay">
+                        <h2>Nội Thất</h2>
+                        <p>Phong cách thể thao kết hợp sang trọng.</p>
+                    </div>
+                    <img src="anhxe/mercedes-amg-sl-r232-highlights-interior-1280x720-11-2022.webp" alt="Nội thất xe">
+                </div>
+                <div class="slide" id="hieu-suat">
+                    <div class="text-overlay">
+                        <h2>Hiệu Suất</h2>
+                        <p>Hiệu suất ngoạn mục, kiểu dáng thể thao.</p>
+                    </div>
+                    <img src="anhxe/mercedes-amg-sl-r232-highlights-performance-1280x720-11-2022.avif" alt="Hiệu suất xe">
+                </div>
+            </div>
+    
+            <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+        </div>
+    
+        <script src="xemoi.js"></script>
+       
+        <section id="gallery" class="image-gallery">
+            
+                <h1>Ngoại thất xe Mercedes-AMG SL Roadster.</h1>
+                <p>Huyền thoại tái sinh trong diện mạo mới.</p>
+            
+            <div>
+                <div class="gallery-item">
+                    <img src="anhxe/mercedes-amg-sl-r232-exterior-sl-43-radiator-grill-digital-light-2176x1224-11-2022.webp" alt="Lưới tản nhiệt đặc trưng AMG">
+                    <h3>SL 43</h3>
+                    <p>Lưới tản nhiệt đặc trưng AMG của Mercedes-AMG SL Roadster nhìn chếch từ phía trước.</p>
+                    <button onclick="showDetails('Lưới tản nhiệt đặc trưng AMG và DIGITAL LIGHT')">Show details</button>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="anhxe/mercedes-amg-sl-r232-exterior-sl-43-exterior-rims-2176x1224-11-2022.webp" alt="Bánh xe hợp kim nhẹ thiết kế 5 chấu kép">
+                    <h3>SL 63 S E PERFORMANCE</h3>
+                    <p>Các bánh xe bằng hợp kim nhẹ AMG 53,3 cm (21") với thiết kế 5 chấu kép.</p>
+                    <button onclick="showDetails()">Show details</button>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="anhxe/mercedes-amg-sl-r232-exterior-sl-43-exterior-led-2176x1224-11-2022.avif" alt="Tay nắm cửa phẳng tự động">
+                    <h3>Tay nắm cửa phẳng</h3>
+                    <p>Tay nắm cửa phẳng, có thể bung ra tự động.</p>
+                    <button onclick="showDetails()">Show details</button>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="anhxe/mercedes-amg-sl-r232-exterior-sl-43-exterior-door-handles-2176x1224-11-2022.webp" alt="Phía sau xe với hệ thống đèn LED hậu">
+                    <h3>Hệ thống đèn LED hậu</h3>
+                    <p>Tầm nhìn sau mạnh mẽ với hệ thống đèn LED hậu.</p>
+                    <button onclick="showDetails()">Show details</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="gallery" class="image-gallery">
+            
+            <h1>Nội thất xe Mercedes-AMG SL Roadster.</h1>
+        
+        <div>
+            <div class="gallery-item">
+                <img src="anhxe/mercedes-amg-sl-r232-interior-hotspot-start-3302x1858-11-2022.avif" alt="Lưới tản nhiệt đặc trưng AMG">
+                <h3>Điểm nổi bật về nội thất</h3>
+                <p>Ghế phong cách thể thao, hệ thống tùy chỉnh âm thanh ống xả là những trang bị tiêu chuẩn. SL có nội thất bọc da toàn bộ. Màn hình giải trí kích thước 11,9 inch có thể thay đổi vị trí để chống chói. Màn hình sau tay lái dạng kĩ thuật số 12,3 inch. SL chỉ có lựa chọn mui mềm với khả năng đóng/mở trong khoảng 15 giây ở tốc độ tối đa 60 km/h.</p>
+            </div>
+        
+            <div class="gallery-item">
+                <img src="anhxe/mercedes-amg-sl-r232-interior-upholstery-04-3302x1858-11-2022.avif" alt="Bánh xe hợp kim nhẹ thiết kế 5 chấu kép">
+                <h3> Đệm ghế</h3>
+                <p>Lựa chọn bọc đệm ghế cho ghế multicontur và ghế AMG Performance tương ứng với nhiều loại trang bị từ tiện nghi đến hướng tới hiệu suất dành cho Mercedes-AMG SL.</p>
+            </div>
+        
+            <div class="gallery-item">
+                <img src="anhxe/mercedes-amg-sl-r232-interior-trimparts-06-3302x1858-11-2022.avif" alt="Tay nắm cửa phẳng tự động">
+                <h3>Các chi tiết trang trí</h3>
+                <p>Chi tiết trang trí mang đến cho nội thất của bạn một vẻ ngoài cá tính. Nó pha trộn hài hòa và tạo ra sự tương phản thú vị. Nhờ đó, nó nhấn mạnh và làm nổi bật thiết kế nội thất. Đồng thời, chi tiết trang trí là một đặc điểm chất lượng dễ nhận biết bất cứ lúc nào.</p>
+            </div>
+        
+            <div class="gallery-item">
+                <img src="anhxe/mercedes-amg-sl-r232-interior-ambient-lighting-06-3302x1858-11-2022.avif" alt="Phía sau xe với hệ thống đèn LED hậu">
+                <h3>Hệ thống đèn viền nội thất</h3>
+                <p>Tùy thuộc vào trang thiết bị và cấu hình mà hệ thống đèn viền nội thất đóng khung nội thất với 64 màu, với phong cách hiển thị "kín đáo" cho các màn hiển thị liên kết với đèn viền xung quanh. Tổng cộng có 8 màu nền để lựa chọn, mỗi màu được gán cho một trong 64 màu.</p>
+            </div>
+            </div>
+    </section>
+
+    <section id="product-gallery" class="gallery-section">
+        <p class="specs1">Thông số kỹ thuật</p>   
+        <h1 class="gallery-title">Trái tim của hệ thống truyền động AMG: Động cơ.</h1>
+        <p class="gallery-description">Chi tiết thiết kế động cơ của Mercedes-AMG SL Roadster.</p>
+    
+    <div class="gallery-items">
+        <div class="gallery-item1">
+            <h3 class="item-title">SL 43</h3>
+            <img src="anhxe/mercedes-amg-sl-r232-performance-sl-43-hotspot-start-3302x1858-11-2022.avif" alt="Lưới tản nhiệt đặc trưng AMG">
+        </div>
+    
+        <div class="gallery-item1">
+            <h3 class="item-title">SL 63 4MATIC+</h3>
+            <img src="anhxe/mercedes-amg-sl-r232-performance-sl-63-4matic-plus-hotspot-start-3302x1858-11-2022.avif" alt="Bánh xe hợp kim nhẹ thiết kế 5 chấu kép">
+            <p class="item-description">Các bánh xe bằng hợp kim nhẹ AMG 53,3 cm (21") với thiết kế 5 chấu kép.</p>
+        </div>
+    
+        <div class="gallery-item1">
+            <h3 class="item-title">Âm thanh Performance Sound</h3>
+            <video controls class="item-video">
+                <source src="anhxe/2022 Mercedes AMG SL63 Exhaust Sound.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+            <p class="item-description">Tay nắm cửa phẳng, có thể bung ra tự động.</p>
+        </div>
+    
+        <div class="gallery-item1">
+            <p class="highlight-text">Điểm nổi bật về an toàn</p>
+            <h3 class="item-title">Sẵn sàng đem đến mọi thứ: các hệ thống an toàn.</h3>
+            <p class="item-description">Nhờ các hệ thống an toàn thông minh, Mercedes-AMG SL Roadster mới có thể giúp bạn an tâm, hỗ trợ và bảo vệ bạn nếu điều tồi tệ nhất xảy ra.</p>
+            <img src="anhxe/mercedes-amg-sl-r232-safety-highlights-hotspot-start-3302x1858-11-2022.avif" alt="Phía sau xe với hệ thống đèn LED hậu">
+            <h3 class="item-title">Điểm nổi bật về an toàn</h3>
+        </div>
+        </div>
+</section>
+        
+
+    <footer>
+        <div class="footer">
+            <div class="title">
+                <p>Lên trên</p>
+            </div>
+            <div class="box-footer">
+                <button>
+                    <p>Đăng ký và nhận quà tặng</p>
+                </button>
+                <h3>Kết nối với Mercedes-Benz</h3>
+                <h6>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</h6>
+            </div>
+            <div class="box-feature">
+                <ul>
+                    <li><b>Các dòng xe</b></li>
+                    <li>Xe thuần điện EQ</li>
+                    <li>Sedan</li>
+                    <li>SUV</li>
+                    <li>Cabriolet và Roadster</li>
+                    <li>Mercedes-AMG</li>
+                    <li>Mercedes-Maybach</li>
+                    <li>Xe đa dụng</li>
+                </ul>
+                <ul>
+                    <li><b>Mua xe</b></li>
+                    <li>Ưu đãi mới nhất</li>
+                    <li>Tìm xe mới</li>
+                    <li>Tìm xe đã qua sử dụng </li>
+                    <li>Bảng giá & Brochure</li>
+                    <li>Cấu hình xe</li>
+                    <li>Khối doanh nghiệp & <br>Khách hàng ưu tiên</li>
+                </ul>
+                <ul>
+                    <li><b>Tư vấn mua xe</b></li>
+                    <li>Yêu cầu tư vấn</li>
+                    <li>Đăng ký lái thử</li>
+                    <li>Tìm Nhà phân phối <br>gần nhất</li>
+                </ul>
+                <ul>
+                    <li><b>Dịch vụ</b></li>
+                    <li>Ưu đãi dịch vụ</li>
+                    <li>Đặt hẹn dịch vụ</li>
+                    <li>Hướng dẫn sử dụng dành <br>cho chủ sở hữu xe</li>
+                    <li>Phụ kiện chính hãng</li>
+                    <li>Bộ sưu tập Mercedes<br>-Benz</li>
+                    <li>Triệu hồi</li>
+                </ul>
+                <ul>
+                    <li><b>Khám phá Mercedes</b></li>
+                    <li>Câu chuyện của chúng <br>tôi</li>
+                    <li>Cơ hội việc làm</li>
+                    <li>Liên hệ</li>
+                    <li>Quyền riêng tư</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="social">
+                <ul>
+                    <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                    <li> <span><i class="fa-brands fa-youtube"></i></span></li>
+                    <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                    <li><span><i class="fa-brands fa-linkedin"></i></span></li>
+                </ul>
+            </div>
+            <div class="box-social">
+                <ul>
+                    <li>Bản quyền nội dung</li>
+                    <li>Cài đặt</li>
+                    <li>Quyền riêng tư và bảo vệ dữ liệu
+                    </li>
+                    <li>Thông tin pháp lý</li>
+                </ul>
+            </div>
+            <div class="box-last">
+                <h6>[1]MBI là sản phẩm bảo hiểm thiệt hại vật chất mang thương hiệu Mercedes-Benz được cung cấp bởi Công
+                    ty TNHH
+                    Mercedes-Benz Việt Nam và Tổng Công ty Bảo hiểm Bảo Việt hoặc Công ty Bảo hiểm Liberty Việt Nam.
+                </h6>
+                <h6>[2]Tính trên chi phí nhân công thực tế theo hóa đơn của Xưởng dịch vụ ủy quyền Mercedes-Benz nhưng
+                    không
+                    vượt quá mức tối đa quy định nêu trên.</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
