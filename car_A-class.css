@@ -274,7 +274,7 @@ main .box-img1 p{
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    background-color: white
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
