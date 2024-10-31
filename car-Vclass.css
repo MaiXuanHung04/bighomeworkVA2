@@ -1,13 +1,13 @@
 *{
     margin: 0;
-    padding: auto;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
 body{
     margin:0;
-    padding: 0%;
+    padding: 0;
 }
 
 
@@ -414,15 +414,15 @@ input:invalid + .error-message,
 select:invalid + .error-message{
     display: block;
 }
-
-
-
+footer{
+    margin-top: 10px;
+}
 footer .footer{
     background-color: black;
     width: 100%;
-    height: 1024px;
+    height: 850px;
     color:#f8f8f8;
-    margin-top:50px;
+   
 }
 footer .title p{
     font-size: 16px;
@@ -430,7 +430,7 @@ footer .title p{
     padding-top: 80px;
 }
 
-.afooter .box-footer{
+footer .box-footer{
     border: 0.5px solid #767676;
     width: 1214px;
     padding: 35px;
@@ -443,9 +443,7 @@ footer .box-footer button{
     padding: 25px;
     margin-bottom: 15px;
     background-color: #0078D6;
-    border: none;
-    border-radius: 3px;
-    margin-right: 100px;
+    border: 0.5px solid #0078D6 ;
 }
 footer button:hover{
     background-color: #01467D;
@@ -454,17 +452,14 @@ footer .box-footer button p{
     color: #f8f8f8;
     font-size: 16px;
     font-weight: bold;
-    
 }
 footer .box-footer h3{
     margin-bottom: 15px;
-    padding-left: 140px;
 }
 footer .box-footer h6{
     font-size: 16px;
     font-weight: 100;
     color: #767676;
-    padding-left: 140px;
 }
 footer .box-feature{
     margin-top: 50px;
@@ -480,35 +475,9 @@ footer .box-feature ul{
    margin-top: 10px;
    text-align: justify;
 }
-footer .box-feature ul li{
-    color:#BBBBBB;
-    font-size: 16px;
-    line-height: 2.5;
-    
-}
-footer .box-feature ul li:first-of-type{
-  color: #f8f8f8;
-  margin-bottom: 10px;
-}
-hr{
-    width: 85%;
-    margin-left: 100px;
-    margin-top: 50px;
-    color: #BBBBBB;
-}
-footer .box-social ul{
-    display: flex;
-    margin-left: 100px;
-    list-style-type: none;
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-footer .box-social li{
-    margin-right: 40px ;
-    color: #BBBBBB;
-}
 footer .box-feature ul li {
     position: relative;
+    padding: 10px;
     color: #BBBBBB;
     font-size: 16px;
     cursor: pointer;
@@ -535,23 +504,35 @@ footer .box-feature ul li:not(:first-of-type):hover {
 footer .box-feature ul li:not(:first-of-type):hover::after {
     transform: scaleX(1);
 }
+
+footer .box-feature ul li:first-of-type{
+  color: #f8f8f8;
+  margin-bottom: 10px;
+}
+hr{
+    width: 85%;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: #BBBBBB;
+}
+footer .box-social ul{
+    display: flex;
+    margin-left: 100px;
+    list-style-type: none;
+    margin-top: 50px;
+}
+footer .box-social li{
+    margin-right: 40px ;
+    color: #BBBBBB;
+}
 footer .social ul{
     display: flex;
     float: right;
     list-style-type: none;
     margin-right: 100px;
     margin-top: 50px;
-    margin-bottom: 80px;
 }
 footer .social li{
     margin-right: 20px;
     font-size: 30px;
 }
-footer .box-last h6{
-    margin-left: 100px;
-    color: #BBBBBB;
-    margin-bottom: 10px;
-}
-
-
-

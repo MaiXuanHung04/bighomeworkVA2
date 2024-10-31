@@ -177,6 +177,9 @@ main .button h4{
     font-weight: 600px;
     padding-bottom: 15px;
 }
+main .button a{
+    text-decoration: none;
+}
 
 footer .footer{
     background-color: black;

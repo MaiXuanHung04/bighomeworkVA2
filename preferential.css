@@ -266,6 +266,9 @@ main .button h4{
     font-weight: 600px;
     padding-bottom: 15px;
 }
+main .button a{
+    text-decoration: none;
+}
 main .article_6 img{
     margin-top: 40px;
     margin-left: 20px;
