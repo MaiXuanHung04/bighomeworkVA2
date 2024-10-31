@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <img src="https://assets.oneweb.mercedes-benz.com/global/1.16.0/images/svg/MB-star_n_web.svg"
+                        alt="Mercedes-Benz Logo" class="logo">
+                    <span class="brand-name">Mercedes-Benz</span>
+                </div>
+                <div class="header-right">
+                    <p>Chính sách và quyền riêng tư</p>
+                    <button>EN</button>
+                    <button>VI</button>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Từ khóa tìm kiếm" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><i class="fa-solid fa-car-rear"></i></li>
+                    <li><a href="#">Các dòng xe</a></li>
+                    <li><a href="#">Mua trực tuyến</a></li>
+                    <li><a href="#">Tư vấn mua xe</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Thế giới Mercedes-Benz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class = "body1">
+        <h1>Kho phụ tùng ô tô cho xe Mercedes, BMW</h1>
+        <p>Chúng tôi luôn có sẵn để đáp ứng cho khách hàng số lượng lớn các phụ tùng ô tô, đặc biệt là phụ tùng ô tô cho xe Mercedes, BMW và luôn không ngừng mở rộng thêm nhiều chủng loại để cung cấp cho quý khách đa dạng sản phẩm cùng với nhiều sự lựa chọn.</p>    
+    </div>   
+
+    <div class ="body2">  
+ 
+        <h2>Giảm xóc 
+            <div class="cart-wrapper">
+                <div class="cart">
+                    <span id="slsp">0</span>
+                    <i class="fa-solid fa-cart-shopping" onclick="hienthigiohang()"></i>
+                    <div id="showgiohang" style="display: none;"></div>
+                </div>
+
+                <div>
+                    <button class = "open__model">Thanh toán</button>
+                    <div class="model">
+                        <div class="model__inner">
+                            <div class="model__header">
+                                <h3>Quét QR để thanh toán</h3>
+                                <i class="fa-regular fa-rectangle-xmark"></i>
+                            </div>
+                            <div class="model__body">
+                                <img src="./assets/img/QR_code.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </h2>
+
+
+        
+        <div class = "product1">
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/uploaded-san-pham-giam-xoc_Giảm xóc trước xe Mercedes-Benz E250_ 2123231300- A2123231300-212 323 13 00 (3)_thumbcr_420x420.jpg" alt="">
+                    <p>Giảm xóc</p>
+                    <p>Mercedes C200K W204</p>
+                    <p><span>500000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/giamxoc -c-w203.jpg" alt="">
+                    <p>Giảm xóc</p>
+                    <p>Mercedes C300K W104</p>
+                    <p><span>700000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>   
+            
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/giamxoc-c-w204.jpg" alt="">
+                    <p>Giảm xóc</p>
+                    <p>Mercedes A200K W205</p>
+                    <p><span>800000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+            </div>  
+            
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/cangi.jpg" alt="">
+                    <p>Giảm xóc</p>
+                    <p>Mercedes A200K W204</p>
+                    <p><span>800000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>  
+        </div>
+       
+        <!-- sp2 -->
+        <h2>Dầu</h2>
+        <div class = "product1">
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/dauhopso.jpg" alt="">
+                    <p>Dầu</p>
+                    <p>Husstle</p>
+                    <p><span>5000000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/dautroluclai.jpg" alt="">
+                    <p>Dầu</p>
+                    <p>Pretador</p>
+                    <p><span>500000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>   
+            
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/fuel_5f06a784c8394add9dd76579ebcf29e0_master.png" alt="">
+                    <p>Nhớt</p>
+                    <p>CK970</p>
+                    <p><span>600000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/oil-system_1a125d21600f4112a173d9035a3c34e9_master (1).png" alt="">
+                    <p>Nhớt</p>
+                    <p>CZ980</p>
+                    <p><span>600000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>  
+            
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/primus_dx5w30_bc22f354b3a04ce9b6f9ad2d20078cb0.png" alt="">
+                    <p>Bô bin</p>
+                    <p>Gold 754</p>
+                    <p><span>700000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/primus_dx5w30_bc22f354b3a04ce9b6f9ad2d20078cb0_master.png" alt="">
+                    <p>Bô bin</p>
+                    <p>Gold 237</p>
+                    <p><span>500000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>  
+        </div>
+       
+        <!-- sp3 -->
+        <h2>Khác</h2>
+        <div class = "product1">
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/choigatmua.jpg" alt="">
+                    <p>Chổi gạt mưa</p>
+                   
+                    <p><span>200000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/cangi.jpg" alt="">
+                    <p>Cangi</p>
+                    
+                    <p><span>300000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>   
+            
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/bobin.jpg" alt="">
+                    <p>Bô bin</p>
+                    
+                    <p><span>100000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/caosucang.jpg" alt="">
+                    <p>Cao su càng</p>
+                 
+                    <p><span>500000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>  
+            
+            <div class = "row">    
+                <section class = "boxsp">
+                    <img src="./assets/img/dia phanh.jpg" alt="">
+                    <p>Dĩa Phanh</p>
+                    <p><span>300000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+                
+                <section class = "boxsp">
+                    <img src="./assets/img/cang a.jpg" alt="">
+                    <p>Càng A</p>
+                    <p><span>1000000</span>VND</p>
+                 <!-- <input type="number" id="number" name="number" min="1" max="100" /> -->
+                    <button type="button" onclick= "addCart(this)">Mua</button>
+                </section>
+            </div>  
+        </div> 
+    </div>  
+    
+
+</div>
+<footer>
+    <div class="footer">
+        <div class="title">
+            <p>Lên trên</p>
+        </div>
+        <div class="box-footer">
+            <button>
+                <p>Đăng ký và nhận quà tặng</p>
+            </button>
+            <h3>Kết nối với Mercedes-Benz</h3>
+            <h6>Hãy giữ kết nối và nhận ngay quà tặng chính hãng để nâng tầm trải nghiệm dịch vụ.</h6>
+        </div>
+        <div class="box-feature">
+            <ul>
+                <li><b>Các dòng xe</b></li>
+                <li>Xe thuần điện EQ</li>
+                <li>Sedan</li>
+                <li>SUV</li>
+                <li>Cabriolet và Roadster</li>
+                <li>Mercedes-AMG</li>
+                <li>Mercedes-Maybach</li>
+                <li>Xe đa dụng</li>
+            </ul>
+            <ul>
+                <li><b>Mua xe</b></li>
+                <li>Ưu đãi mới nhất</li>
+                <li>Tìm xe mới</li>
+                <li>Tìm xe đã qua sử dụng </li>
+                <li>Bảng giá & Brochure</li>
+                <li>Cấu hình xe</li>
+                <li>Khối doanh nghiệp & <br>Khách hàng ưu tiên</li>
+            </ul>
+            <ul>
+                <li><b>Tư vấn mua xe</b></li>
+                <li>Yêu cầu tư vấn</li>
+                <li>Đăng ký lái thử</li>
+                <li>Tìm Nhà phân phối <br>gần nhất</li>
+            </ul>
+            <ul>
+                <li><b>Dịch vụ</b></li>
+                <li>Ưu đãi dịch vụ</li>
+                <li>Đặt hẹn dịch vụ</li>
+                <li>Hướng dẫn sử dụng dành <br>cho chủ sở hữu xe</li>
+                <li>Phụ kiện chính hãng</li>
+                <li>Bộ sưu tập Mercedes<br>-Benz</li>
+                <li>Triệu hồi</li>
+            </ul>
+            <ul>
+                <li><b>Khám phá Mercedes</b></li>
+                <li>Câu chuyện của chúng <br>tôi</li>
+                <li>Cơ hội việc làm</li>
+                <li>Liên hệ</li>
+                <li>Quyền riêng tư</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="social">
+            <ul>
+                <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                <li> <span><i class="fa-brands fa-youtube"></i></span></li>
+                <li><span><i class="fa-brands fa-instagram"></i></span></li>
+                <li><span><i class="fa-brands fa-linkedin"></i></span></li>
+            </ul>
+        </div>
+        <div class="box-social">
+            <ul>
+                <li>Bản quyền nội dung</li>
+                <li>Cài đặt</li>
+                 <li>Quyền riêng tư và bảo vệ dữ liệu
+                </li>
+                <li>Thông tin pháp lý</li>
+            </ul>
+        </div>
+        <div class="box-last">
+            <h6>[1]MBI là sản phẩm bảo hiểm thiệt hại vật chất mang thương hiệu Mercedes-Benz được cung cấp bởi Công
+                ty TNHH
+                Mercedes-Benz Việt Nam và Tổng Công ty Bảo hiểm Bảo Việt hoặc Công ty Bảo hiểm Liberty Việt Nam.
+            </h6>
+            <h6>[2]Tính trên chi phí nhân công thực tế theo hóa đơn của Xưởng dịch vụ ủy quyền Mercedes-Benz nhưng
+                không
+                vượt quá mức tối đa quy định nêu trên.</h6>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+

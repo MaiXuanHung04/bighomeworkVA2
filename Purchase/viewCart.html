@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <style>
+        /* Căn chỉnh trung tâm và định dạng chung */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .boxcenter {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #666;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 1em;
+        }
+        th {
+            background-color: #666;
+            color: white;
+            font-weight: bold;
+        }
+        td a {
+            color: #e91e63;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .total-row {
+            font-weight: bold;
+        }
+        .total-price {
+            background-color: #666;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>  
+    <div class="boxcenter">
+        <h2>Đơn hàng của bạn</h2>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Đơn Giá</th>
+                <th>Số Lượng</th>
+                <th>Thành Tiền</th>
+                <th>Xoá</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="link_hinh_anh_sp.jpg" alt="Sản phẩm" width="50"></td>
+                <td>Tên sản phẩm</td>
+                <td>100,000 VND</td>
+                <td>2</td>
+                <td>200,000 VND</td>
+                <td><a href="#">Xoá</a></td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="5">Tổng Đơn Hàng</td>
+                <td class="total-price">200,000 VND</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
+
+   
+       
