@@ -114,6 +114,9 @@ header{
     text-decoration: none;
     font-size: 16px;
 }
+.main-nav ul li a:hover{
+    color: white;
+}
 main .main-bar{
     display: flex;
     margin-left: 130px;
