@@ -665,6 +665,7 @@ header{
     margin-top: 1000px ;
     padding-left: 80px;
     display: flex;
+    overflow: hidden;
 }
 
 .divFlex:hover .flexImg img {
